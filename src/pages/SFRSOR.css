@@ -1,0 +1,109 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.sfrsor-header {
+  width: 100vw;
+  height: 200px;
+  background-image: url('../assets/title-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin-left: calc(-50vw + 50%);
+}
+
+.sfrsor-title {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.sfrsor-section {
+  background-color: white;
+  padding: 2rem 0;
+}
+
+.sfrsor-description {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.sfrsor-info-card {
+  cursor: pointer;
+}
+
+.sfrsor-card-body {
+  background-color: #f8f9fa;
+  transition: transform 0.2s;
+}
+
+.sfrsor-card-body:hover {
+  transform: translateY(-5px);
+  transition: transform 0.3s;
+}
+
+.sfrsor-card-title-wrapper {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.sfrsor-card-title {
+  background-color: lightblue;
+  padding: 0.75rem;
+  font-weight: normal;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.sfrsor-card-description {
+  background-color: white;
+  padding: 0.75rem;
+  min-height: 10rem;
+}
+
+.modal-title-custom {
+  text-align: center;
+  font-weight: bold;
+}
+
+.modal-subtitle {
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+@media (max-width: 767px) {
+  .sfrsor-title,
+  .sfrsor-description {
+    text-align: center !important;
+  }
+
+  .sfrsor-button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.sfrsor-bottom-image {
+  width: 100%;
+  height: auto;
+}

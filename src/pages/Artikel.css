@@ -1,0 +1,67 @@
+/* Artikel.css */
+.container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .artikel-header {
+    width: 100vw; /* Ubah menjadi 100vw untuk memastikan seluruh lebar viewport */
+    height: 200px;
+    background-image: url('../assets/title-bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    margin-left: calc(-50vw + 50%); /* Menyeimbangkan gambar agar meluas ke tepi */
+  }
+  
+  .artikel-title {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .card {
+    border: none;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #007bff;
+    transition: color 0.3s;
+  }
+  
+  .card-title:hover {
+    color: #0056b3;
+    text-decoration: none;
+  }
+  
+  .card-subtitle {
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #333;
+  }
+  

@@ -1,0 +1,34 @@
+/* src/pages/Profil.css */
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.profil-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profil-header {
+  width: 100vw; /* Ubah menjadi 100vw untuk memastikan seluruh lebar viewport */
+  height: 200px;
+  background-image: url('../assets/title-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin-left: calc(-50vw + 50%); /* Menyeimbangkan gambar agar meluas ke tepi */
+}
+
+.profil-title {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

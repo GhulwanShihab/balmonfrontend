@@ -1,0 +1,86 @@
+/* src/pages/IAR.css */
+
+body {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .iar-section {
+    background-color: white;
+    padding: 2rem 0;
+  }
+  
+  .iar-header {
+    width: 100vw; /* Ubah menjadi 100vw untuk memastikan seluruh lebar viewport */
+    height: 200px;
+    background-image: url('../assets/title-bg.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    margin-left: calc(-50vw + 50%); /* Menyeimbangkan gambar agar meluas ke tepi */
+  }
+  
+  .iar-bg-title {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+
+  .iar-title {
+    font-weight: bold;
+    color: darkblue;
+  }
+  
+  .iar-description {
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+  }
+  
+  .iar-button {
+    background: linear-gradient(to right, darkblue, lightblue);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease; /* Menambahkan transisi untuk efek halus */
+  }
+  
+  .img-fluid:hover {
+    transform: translateY(-10px); /* Efek terangkat sedikit */
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  @media (max-width: 767px) {
+    .iar-title,
+    .iar-description {
+      text-align: center !important;
+    }
+  
+    .iar-button {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  
+  .iar-bottom-image {
+    width: 100%;
+    height: auto;
+  }
+  

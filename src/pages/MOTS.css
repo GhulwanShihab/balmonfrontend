@@ -1,0 +1,91 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+}
+
+.mots-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mots-header {
+  width: 100vw;
+  height: 200px;
+  background-image: url('../assets/title-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin-left: calc(-50vw + 50%);
+}
+
+.mots-title {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.mots-content {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-top: 2rem;
+  max-width: 1200px;
+}
+
+.mots-list {
+  margin-bottom: 1rem;
+}
+
+.mots-list ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mots-list li {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  background-color: #f0f0f0;
+  margin-bottom: 0.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  font-size: 1.1rem;
+}
+
+.mots-list li:hover {
+  background-color: #ddd;
+}
+
+.mots-description {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.mots-description h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.mots-description p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.mots-description ul {
+  padding-left: 1.5rem;
+}
+
+.mots-description ul li {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}

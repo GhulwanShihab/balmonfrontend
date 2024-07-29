@@ -1,0 +1,30 @@
+/* src/pages/GaleriVideo.css */
+.galeri-video .card-video-wrapper {
+  overflow: hidden; /* Menjaga video tetap dalam batas card */
+}
+
+.galeri-video .card-video-wrapper iframe {
+  transition: transform 0.3s ease; /* Transisi untuk zoom efek */
+}
+
+.galeri-video .card-video-wrapper:hover iframe {
+  transform: scale(1.05); /* Zoom in efek */
+}
+.galeri-video-header {
+  width: 100vw; /* Ubah menjadi 100vw untuk memastikan seluruh lebar viewport */
+  height: 200px;
+  background-image: url('../assets/title-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin-left: calc(-50vw + 50%); /* Menyeimbangkan gambar agar meluas ke tepi */
+}
+
+.galeri-video-title {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

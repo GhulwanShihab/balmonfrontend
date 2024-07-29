@@ -1,0 +1,56 @@
+.isr-header {
+  width: 100vw; /* Ubah menjadi 100vw untuk memastikan seluruh lebar viewport */
+  height: 200px;
+  background-image: url('../assets/title-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin-left: calc(-50vw + 50%); /* Menyeimbangkan gambar agar meluas ke tepi */
+}
+
+.isr-bg-title {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.isr-info-card {
+  cursor: pointer;
+}
+
+.isr-card-body {
+  background-color: #f8f9fa;
+  transition: transform 0.2s;
+}
+
+.isr-card-body:hover {
+ transform: translateY(-5px);
+  transition: transform 0.3s;
+}
+
+.isr-card-title-wrapper {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.isr-card-title {
+  background-color: lightblue; /* Background warna lightblue untuk judul */
+  padding: 0.75rem; /* Padding untuk judul card */
+  font-weight: normal; /* Menghapus bold pada judul card */
+  font-size: 1rem; /* Mengurangi ukuran teks judul card */
+  margin-bottom: 0; /* Menghilangkan margin bawah pada judul card */
+}
+
+.isr-card-description {
+  background-color: white;
+  padding: 0.75rem;
+  min-height: 10rem; /* Menentukan tinggi minimum untuk deskripsi */
+}
+
+.isr-bottom-image {
+  max-width: 100%;
+  height: auto;
+}

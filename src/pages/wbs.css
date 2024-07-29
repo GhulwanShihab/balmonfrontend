@@ -1,0 +1,28 @@
+.wbs-section {
+    text-align: center;
+  }
+  
+  .wbs-header {
+    margin-bottom: 20px;
+  }
+  
+  .wbs-title {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .wbs-subtitle {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .wbs-image-container {
+    width: 100%;
+    max-width: 600px; /* Batas lebar maksimum untuk gambar */
+    margin: 0 auto; /* Tengah */
+  }
+  
+  .wbs-image {
+    border-radius: 8px; /* Radius sudut untuk gambar */
+  }
+  

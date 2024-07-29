@@ -1,0 +1,62 @@
+.instagram-section {
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 1;
+}
+
+.instagram-carousel-item {
+    max-height: 600px;
+    overflow: hidden;
+    position: relative; /* Pastikan caption ditempatkan dengan benar */
+}
+
+.instagram-carousel-image {
+    max-height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.instagram-carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0; /* Reset margin untuk memastikan tidak ada penggeseran */
+    z-index: 2;
+}
+
+.instagram-carousel-title {
+    font-weight: bold;
+    color: white;
+}
+
+.instagram-carousel-title a {
+    text-decoration: none;
+    color: white;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: #fff;
+}
+
+.carousel-control-prev-icon {
+    left: 15px;
+}
+
+.carousel-control-next-icon {
+    right: 15px;
+}

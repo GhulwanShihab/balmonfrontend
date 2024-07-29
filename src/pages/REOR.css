@@ -1,0 +1,118 @@
+/* src/pages/REOR.css */
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.reor-section {
+  background-color: white;
+  padding: 2rem 0;
+}
+
+.reor-header {
+  width: 100vw; /* Ubah menjadi 100vw untuk memastikan seluruh lebar viewport */
+  height: 200px;
+  background-image: url('../assets/title-bg.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+  margin-left: calc(-50vw + 50%); /* Menyeimbangkan gambar agar meluas ke tepi */
+}
+
+.reor-bg-title {
+  font-size: 3rem;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.reor-title {
+  font-weight: bold;
+  color: darkblue;
+}
+
+.reor-description {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+.reor-button {
+  background: linear-gradient(to right, darkblue, lightblue);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Menambahkan transisi untuk efek halus */
+}
+
+.img-fluid:hover {
+  transform: translateY(-10px); /* Efek terangkat sedikit */
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.reor-info-card {
+  cursor: pointer;
+}
+
+.reor-card-body {
+  background-color: #f8f9fa;
+  transition: transform 0.2s;
+}
+
+.reor-card-body:hover {
+ transform: translateY(-5px);
+  transition: transform 0.3s;
+}
+
+.reor-card-title-wrapper {
+  background-color: lightblue;
+  padding: 10px;
+}
+
+.reor-card-title {
+  background-color: lightblue; /* Background warna lightblue untuk judul */
+  padding: 0.75rem; /* Padding untuk judul card */
+  font-weight: normal; /* Menghapus bold pada judul card */
+  font-size: 1rem; /* Mengurangi ukuran teks judul card */
+  margin-bottom: 0; /* Menghilangkan margin bawah pada judul card */
+}
+
+.reor-card-description {
+  background-color: white;
+  padding: 0.75rem;
+  min-height: 10rem; /* Menentukan tinggi minimum untuk deskripsi */
+}
+
+@media (max-width: 767px) {
+  .reor-title,
+  .reor-description {
+    text-align: center !important;
+  }
+
+  .reor-button {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.reor-bottom-image {
+  width: 100%;
+  height: auto;
+}

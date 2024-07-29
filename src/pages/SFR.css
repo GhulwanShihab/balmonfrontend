@@ -1,0 +1,44 @@
+/* src/pages/SFR.css */
+.sfr-container {
+  margin-top: 20px;
+}
+  
+.list-card {
+  margin-bottom: 20px;
+}
+  
+.list-card .card-title {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+  
+.list-card .card-title.active {
+  font-weight: bold;
+}
+/* src/pages/SFR.css */
+.list-card .active {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.content-card {
+  cursor: pointer;
+}
+
+.content-card .open {
+  display: block;
+}
+
+
+/* Additional responsive adjustments */
+@media (max-width: 767.98px) {
+  .list-card .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content-card {
+    margin-bottom: 1rem;
+  }
+}
