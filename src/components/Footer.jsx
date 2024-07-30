@@ -1,9 +1,8 @@
-// src/components/Footer.jsx
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { FaMapMarkerAlt, FaWhatsapp, FaEnvelope, FaInstagram, FaYoutube, FaFacebook, FaWhatsappSquare } from 'react-icons/fa';
-import kabalmon from '../assets/elon.png';
-import kasubag from '../assets/elon.png';
+import { FaMapMarkerAlt, FaWhatsapp, FaEnvelope, FaInstagram, FaYoutube, FaWhatsappSquare } from 'react-icons/fa';
+import kabalmon from '../assets/Kabalmon.png';
+import kasubag from '../assets/Kasubbag Umum.png';
 import logobalmon from '../assets/logo.png';
 import './Footer.css';
 
@@ -24,20 +23,37 @@ const Footer = () => {
             <Col md={4} className="footer-section footer-social-icons">
               <h5>Ikuti Kami</h5>
               <div className="footer-social-icons mb-3">
-                <p><FaInstagram className="footer-icon" /> @balmonsfr_lampung</p>
-                <p><FaYoutube className="footer-icon" /> balmon_lampung</p>
-                <p><FaWhatsappSquare className="footer-icon" /> 0852 6666 6910</p>
+                <p>
+                  <a href="https://instagram.com/balmonsfr_lampung" target="_blank" rel="noopener noreferrer" className="text-dark">
+                    <FaInstagram className="footer-icon" /> @balmonsfr_lampung
+                  </a>
+                </p>
+                <p>
+                  <a href="https://www.youtube.com/channel/UCr1uz5gL0fLLv_sysPknxaA" target="_blank" rel="noopener noreferrer" className="text-dark">
+                    <FaYoutube className="footer-icon" /> balmon_lampung
+                  </a>
+                </p>
+                <p>
+                  <a href="https://wa.me/6285266666910" target="_blank" rel="noopener noreferrer" className="text-dark">
+                    <FaWhatsappSquare className="footer-icon" /> 0852 6666 6910
+                  </a>
+                </p>
+                <p>
+                  <a href="mailto:balmonsaranadanpelayanan@gmail.com" className="text-dark">
+                    <FaEnvelope className="footer-icon" /> balmonsaranadanpelayanan@gmail.com
+                  </a>
+                </p>
               </div>
             </Col>
-            <Col md={5} className="footer-section text-center">
-              <Row>
-                <Col>
-                  <h4>Kepala</h4>
+            <Col md={5} className="footer-section text-center d-flex align-items-center">
+              <Row className="w-100 justify-content-center">
+                <Col xs={6} className="d-flex flex-column align-items-center">
+                  <h4 className="footer-title">KEPALA BALAI MONITOR SFR II LAMPUNG<br/></h4>
                   <img src={kabalmon} alt="Kepala" className="footer-team-photo mb-2" />
                 </Col>
-                <Col>
-                  <h4>Ketua</h4>
-                  <img src={kasubag} alt="Ketua" className="footer-team-photo mb-2" />
+                <Col xs={6} className="d-flex flex-column align-items-center">
+                  <h4 className="footer-title">KASUBBAG <br/> UMUM</h4>
+                  <img src={kasubag} alt="Kasubbag" className="footer-team-photo mb-2" />
                 </Col>
               </Row>
             </Col>

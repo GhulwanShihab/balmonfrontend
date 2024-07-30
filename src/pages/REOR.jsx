@@ -73,7 +73,7 @@ const REOR = () => {
                 </ul>
             </li>
           </ol>
-          <Button className="reor-button">Lihat Selengkapnya &gt; </Button>
+          <Button className="reor-button" href="https://reor.postel.go.id/">Lihat Selengkapnya &gt; </Button>
         </Col>
         <Col md={6} className="text-center">
           <img

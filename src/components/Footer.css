@@ -1,47 +1,46 @@
-/* src/components/Footer.css */
 .footer {
-    background-color: blue; /* Blue background */
-  }
-  
-  .footer-top {
-    background-color: lightblue;
-    padding: 40px 0; /* Added padding for better spacing */
-  }
-  
-  .footer-logo {
-    max-width: 100px;
-  }
-  
-  .footer-contact p, .footer-social-icons p {
-    display: flex;
-    align-items: center;
-    margin-bottom: 8px;
-  }
-  
-  .footer-icon {
-    margin-right: 10px;
-  }
-  
-  .footer-team-photo {
-    max-width: 150px;
-    border-radius: 8px;
-  }
-  
-  .footer-section h5, .footer-section h4 {
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .footer-bottom {
-    background-color: #343a40;
-    color: #6c757d;
-  }
-  
-  /* Centering the middle section */
-  .footer-section.footer-social-icons {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    text-align: center; /* Center text within each line */
-  }
-  
+  background-color: blue; /* Blue background */
+}
+
+.footer-top {
+  background-color: lightblue;
+  padding: 40px 0; /* Added padding for better spacing */
+}
+
+.footer-logo {
+  max-width: 100px;
+}
+
+.footer-contact p, .footer-social-icons p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.footer-icon {
+  margin-right: 10px;
+}
+
+.footer-team-photo {
+  max-width: 200px; /* Meningkatkan ukuran foto */
+  border-radius: 8px;
+}
+
+.footer-section h5, .footer-section h4 {
+  font-weight: bold;
+  font-size: 0.9rem; /* Mengurangi ukuran font */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.footer-bottom {
+  background-color: #343a40;
+  color: #6c757d;
+}
+
+.footer-section.footer-social-icons {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Center text within each line */
+}

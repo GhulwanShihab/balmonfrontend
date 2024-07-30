@@ -66,7 +66,7 @@ const GangguanFrekuensi = () => {
                 <li>Cek email Notifikasi Aduan di email pengadu/pelapor. Email notifikasi aduan yang diterima akan disertai dua lampiran dokumen yang dapat digunakan sebagai bukti lapor</li>
             </ul>
           </p>
-          <Button className="iar-button">Lapor Gangguan &gt; </Button>
+          <Button className="iar-button" href='https://laporgangguansfr.postel.go.id/index.php?class=LoginForm'>Lapor Gangguan &gt; </Button>
         </Col>
         <Col md={6} className="text-center">
           <img

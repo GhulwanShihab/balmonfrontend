@@ -29,8 +29,8 @@ const BeritaTerkini = () => {
   return (
     <div className="bg-light px-3 py-4">
       <div className="text-center mb-4">
-        <h3 className="text-primary font-weight-bold">
-            BERITA TERKINI
+        <h3 className="text-primary font-weight-bold" style={{color: "darkblue"}}>
+            <strong>BERITA TERKINI</strong>
         </h3>
       </div>
       <div className="container">

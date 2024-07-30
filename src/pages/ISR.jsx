@@ -151,7 +151,7 @@ const ISR = () => {
         <Col md={6} className="text-md-left mb-4 mb-md-0">
           <h2 className="isr-title text-left">Izin Stasiun Radio</h2>
           <p className="isr-description text-left">Izin Stasiun Radio yang selanjutnya disingkat ISR adalah izin penggunaan spektrum frekuensi radio dalam bentuk kanal frekuensi radio berdasarkan persyaratan tertentu.</p>
-          <Button className="isr-button">Proses Perizinan &gt;</Button>
+          <Button className="isr-button" href="https://spectraweb.ditfrek.postel.go.id/postel/select_language.do?lang=id&country=ID">Proses Perizinan &gt;</Button>
         </Col>
         <Col md={6} className="text-center">
           <img
@@ -165,7 +165,7 @@ const ISR = () => {
         <Col md={6} className="order-md-2 text-md-right mb-4 mb-md-0">
           <h2 className="isr-title text-right">CALL CENTER BALAI MONITOR SPEKTRUM FREKUENSI RADIO KELAS II LAMPUNG</h2>
           <p className="isr-description text-right">MASIH BINGUNG? LANGSUNG AJA HUBUNGI KAMI</p>
-          <Button className="isr-button">WhatsApp &gt;</Button>
+          <Button className="isr-button" href="https://wa.me/6285266666910">WhatsApp &gt;</Button>
         </Col>
         <Col md={6} className="order-md-1 text-center">
           <iframe

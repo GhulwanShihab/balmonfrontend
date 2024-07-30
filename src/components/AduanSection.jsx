@@ -1,14 +1,24 @@
 import React from "react";
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
-import { FaRegStar } from "react-icons/fa";
 import aduanimg from '../assets/aduan.png';
+import gangguanimg from '../assets/iarlogo.png'
+import wbsimg from '../assets/wbslogo.png'
+import laporimg from '../assets/laporlogo.png'
 
 const AduanSection = () => {
   const aduanData = [
-    { icon: <FaRegStar />, title: "Lapor Gangguan Frekuensi", link: "#" },
-    { icon: <FaRegStar />, title: "Whistle Blower System (WBS)", link: "#" },
-    { icon: <FaRegStar />, title: "SP4N Lapor", link: "#" },
+    { image: gangguanimg, title: "Lapor Gangguan Frekuensi", link: "/gangguan-frekuensi" },
+    { image: wbsimg, title: "Whistle Blower System (WBS)", link: "/wbs" },
+    { image: laporimg, title: "SP4N Lapor", link: "/sp4n" },
   ];
+
+  const imageStyle = {
+    width: '80px',
+    height: '80px',
+    borderRadius: '50%',
+    border: '3px solid lightblue',
+    marginBottom: '20px'
+  };
 
   return (
     <div style={{ backgroundColor: '#f8f9fa', padding: '2rem 0' }}>
@@ -28,7 +38,7 @@ const AduanSection = () => {
             {aduanData.map((aduan, index) => (
               <Card className="mb-4" style={{ textAlign: 'left' }} key={index}>
                 <Card.Body>
-                  <div style={{ fontSize: '2rem' }}>{aduan.icon}</div>
+                <img src={aduan.image} style={imageStyle} />
                   <Card.Title style={{ fontSize: '1.2rem', marginBottom: '1rem' }}>
                     {aduan.title}
                   </Card.Title>

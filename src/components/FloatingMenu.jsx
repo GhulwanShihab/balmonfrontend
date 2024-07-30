@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BsFacebook, BsInstagram, BsYoutube, BsTiktok } from 'react-icons/bs';
+import { BsInstagram, BsYoutube, BsWhatsapp } from 'react-icons/bs'; // Import BsWhatsapp
 import { MdArrowForwardIos } from 'react-icons/md';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -31,18 +31,7 @@ const FloatingMenu = () => {
         >
           <div className="mb-3">
             <a
-              href="https://www.facebook.com/profile.php?id=100064564037361"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-white d-flex align-items-center justify-content-center"
-              style={{ width: '2rem', height: '2rem' }}
-            >
-              <BsFacebook />
-            </a>
-          </div>
-          <div className="mb-3">
-            <a
-              href="https://instagram.com/okoce.indonesia"
+              href="https://instagram.com/balmonsfr_lampung"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white d-flex align-items-center justify-content-center"
@@ -53,18 +42,18 @@ const FloatingMenu = () => {
           </div>
           <div className="mb-3">
             <a
-              href="https://www.tiktok.com/@okoceindonesia"
+              href="https://wa.me/085266666910" 
               target="_blank"
               rel="noopener noreferrer"
               className="text-white d-flex align-items-center justify-content-center"
               style={{ width: '2rem', height: '2rem' }}
             >
-              <BsTiktok />
+              <BsWhatsapp />
             </a>
           </div>
           <div>
             <a
-              href="https://www.youtube.com/channel/UCrXYetY5iBgnFnNKCVYzihw"
+              href="https://www.youtube.com/channel/UCr1uz5gL0fLLv_sysPknxaA"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white d-flex align-items-center justify-content-center"

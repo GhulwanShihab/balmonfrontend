@@ -1,5 +1,3 @@
-/* src/pages/Contact.css */
-
 body {
   font-family: 'Roboto', sans-serif;
 }
@@ -19,6 +17,14 @@ body {
   text-align: center;
   color: #6c757d;
   margin-bottom: 3rem;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
 }
 
 .contact-info {

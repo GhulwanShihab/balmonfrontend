@@ -33,9 +33,6 @@ import CMSHome from './cms/home';
 import BeritasTable from './cms/beritas';
 import CreateBerita from './cms/beritas/create';
 import UpdateBerita from './cms/beritas/update';
-import ProfilesTable from './cms/profile';
-import CreateProfile from './cms/profile/create';
-import UpdateProfile from './cms/profile/update';
 import InstagramTable from './cms/instagram';
 import CreateInstagram from './cms/instagram/create';
 import UpdateInstagram from './cms/instagram/update';
@@ -49,6 +46,7 @@ import GaleriFotoTable from './cms/foto/index.jsx';
 import CreateGaleriFoto from './cms/foto/create.jsx';
 import UpdateGaleriFoto from './cms/foto/update.jsx';
 import IARTable from './cms/iar/index.jsx';
+import VisiMisiTable from './cms/visi-misi/index.jsx';
 import { AuthProvider } from './AuthContext.js';
 
 
@@ -62,9 +60,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="/admin/berita" element={<AdminPrivateRoute component={BeritasTable}/>} />
             <Route path="/admin/berita/create" element={<AdminPrivateRoute component={CreateBerita}/>} />
             <Route path="/admin/berita/edit/:id" element={<AdminPrivateRoute component={UpdateBerita}/>} />
-            <Route path="/admin/profile" element={<AdminPrivateRoute component={ProfilesTable}/>} />
-            <Route path="/admin/profile/create" element={<AdminPrivateRoute component={CreateProfile}/>} />
-            <Route path="/admin/profile/edit/:id" element={<AdminPrivateRoute component={UpdateProfile}/>} />
             <Route path="/admin/instagram" element={<AdminPrivateRoute component={InstagramTable}/>} />
             <Route path="/admin/instagram/create" element={<AdminPrivateRoute component={CreateInstagram}/>} />
             <Route path="/admin/instagram/edit/:id" element={<AdminPrivateRoute component={UpdateInstagram}/>} />
@@ -78,6 +73,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
             <Route path="/admin/struktur/create" element={<AdminPrivateRoute component={CreateStrukturPengurus}/>} />
             <Route path="/admin/struktur/update" element={<AdminPrivateRoute component={UpdateStrukturPengurus}/>} />
             <Route path="/admin/iar" element={<AdminPrivateRoute component={IARTable}/>} />
+            <Route path="/admin/visi-misi" element={<AdminPrivateRoute component={VisiMisiTable}/>} />
 
             <Route path="/" element={<App />} />
             <Route path="/berita" element={<DaftarBerita />} />

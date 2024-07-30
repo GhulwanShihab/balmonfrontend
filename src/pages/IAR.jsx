@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
+import perpanjanganimg from '../assets/perpanjangan.png'
 
 const IAR = () => {
   const [deskripsi, setDeskripsi] = useState('');
@@ -121,7 +122,7 @@ const IAR = () => {
       <Row className="justify-content-center">
         <Col>
           <img
-            src={`http://localhost:3000/${perpanjangan.foto}`}
+            src={perpanjanganimg}
             alt="Perpanjangan"
             className="img-fluid iar-bottom-image"
           />

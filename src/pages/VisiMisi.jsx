@@ -14,15 +14,20 @@ const VisiMisi = () => {
       <Row className="align-items-center mb-5">
         <Col md={6} className="text-md-left mb-4 mb-md-0">
           <h2 className="iar-title text-left">VISI</h2>
-          <p className="iar-description text-left">Terwujudnya penggunaan spektrum frekuensi radio yang tertib, efisien dan bebas dari segala interferensi yang merugikan, melalui implementasi sistem pengendalian dan pengawasan yang profesional sesuai dengan teknologi komunikasi</p>
+          <p className="iar-description text-left">Terwujudnya Indonesia Maju yang Berdaulat, Mandiri, dan Berkepribadian Berlandaskan Gotong Royong </p>
           <h2 className="iar-title text-left">MISI</h2>
           <p className="iar-description text-left">
-            <ul className="text-left">
-                <li className="text-left">Mendukung dan meningkatkan pelayanan publik berbasis online (transformasi digital)</li>
-                <li>Meningkatkan kualitas pengawasan dan pengendalian penggunaan spektrum frekuensi radio</li>
-                <li>Meningkatkan kualitas, kompetensi, dan kredibilitas sumber daya manusia di Balai Monitor Spektrum Frekuensi Radio kelas i Semarang</li>
-                <li>Mendukung pembangunan zona integritas menuju Wilayah Bebas dari Korupsi (WBK) dan Wilayah Birokrasi Bersih Melayani (WBBM) melalui reformasi birokrasi khususnya pencegahan korupsi dan peningkatan pelayanan publik.</li>
-            </ul>
+            <ol className="text-left">
+                <li className="text-left">Peningkatan Kualitas Manusia Indonesia </li>
+                <li>Struktur Ekonomi yang Produktif, Mandiri, dan Berdaya Saing</li>
+                <li>Pembangunan yang Merata dan Berkeadilan</li>
+                <li>Mencapai Lingkungan Hidup yang Berkelanjutan</li>
+                <li>Kemajuan Budaya yang Mencerminkan Kepribadian Bangsa</li>
+                <li>Penegakan Sistem Hukum yang Bebas Korupsi, Bermartabat, dan Terpercaya</li>
+                <li>Perlindungan bagi Segenap Bangsa dan Memberikan Rasa Aman pada Seluruh Warga </li>
+                <li>Pengelolaan Pemerintahan yang Bersih, Efektif, dan Terpercaya</li>
+                <li>Sinergi Pemerintah Daerah dalam Kerangka Negara Kesatuan</li>
+            </ol>
           </p>
         </Col>
         <Col md={6} className="text-center">

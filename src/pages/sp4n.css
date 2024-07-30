@@ -1,0 +1,16 @@
+/* src/pages/LaporSp4n.css */
+  
+  .small-landscape-photo {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .text-left {
+    text-align: left;
+  }
+  

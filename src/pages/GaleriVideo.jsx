@@ -8,36 +8,43 @@ const GaleriVideo = () => {
 
   const fetchData = async () => {
     try {
-        const response = await fetch('http://localhost:3000/galeri-videos');
-        if (!response.ok) {
-            throw new Error('Gagal mengambil data galeri videos');
-        }
-        const data = await response.json();
-        const merch = data.data;
-        
-        const getYouTubeVideoId = (url) => {
+      const response = await fetch('http://localhost:3000/galeri-videos');
+      if (!response.ok) {
+        throw new Error('Gagal mengambil data galeri videos');
+      }
+      const data = await response.json();
+      const merch = data.data;
+
+      const getYouTubeVideoId = (url) => {
+        try {
           const urlObj = new URL(url);
-          // Periksa apakah URL memiliki ID video sebagai parameter 'v' atau 'live'
           return urlObj.searchParams.get("v") || urlObj.pathname.split("/").pop();
-        };
-        
-        const galeriVideoData = merch.map(item => ({
+        } catch (e) {
+          console.error('Invalid URL:', url);
+          return null;
+        }
+      };
+
+      const galeriVideoData = merch.map(item => {
+        const videoId = getYouTubeVideoId(item.linkvideo);
+        if (!videoId) return null; // Skip invalid URLs
+        return {
           id: item.id,
           title: item.title,
-          linkvideo: `https://www.youtube.com/embed/${getYouTubeVideoId(item.linkvideo)}`,
-        }));
-        
-        setDatas(galeriVideoData);
+          linkvideo: `https://www.youtube.com/embed/${videoId}`,
+        };
+      }).filter(item => item !== null); // Filter out null entries
+
+      setDatas(galeriVideoData);
     } catch (error) {
-        console.error('Error fetching data:', error);
-        setDatas([]);
+      console.error('Error fetching data:', error);
+      setDatas([]);
     }
-};
+  };
 
-useEffect(() => {
+  useEffect(() => {
     fetchData();
-}, []);
-
+  }, []);
 
   return (
     <>
@@ -46,32 +53,31 @@ useEffect(() => {
           <h1 className="galeri-video-title">GALERI VIDEO</h1>
         </div>
       </div>
-    <Container className="my-5 galeri-video">
-      <Row>
-        {datas.map((item) => (
-          <Col md={4} key={item.id}>
-            <Card className="mb-4">
-              <div className="card-video-wrapper">
-                <iframe
-                  width="100%"
-                  height="200"
-                  src={item.linkvideo}
-                  title={item.title}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-              </div>
-              <Card.Body>
-                <Card.Title>{item.title}</Card.Title>
-              </Card.Body>
-            </Card>
-          </Col>
-        ))}
-      </Row>
-    </Container>
+      <Container className="my-5 galeri-video">
+        <Row>
+          {datas.map((item) => (
+            <Col md={4} key={item.id}>
+              <Card className="mb-4">
+                <div className="card-video-wrapper">
+                  <iframe
+                    width="100%"
+                    height="200"
+                    src={item.linkvideo}
+                    title={item.title}
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+                <Card.Body>
+                  <Card.Title>{item.title}</Card.Title>
+                </Card.Body>
+              </Card>
+            </Col>
+          ))}
+        </Row>
+      </Container>
     </>
-    
   );
 };
 

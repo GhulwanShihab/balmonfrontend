@@ -1,5 +1,7 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom';
 import Navbar from './Navbar.jsx';
+import AdminNavbar from './AdminNavbar.jsx'; // Import AdminNavbar
 import Footer from './Footer.jsx';
 
 const layoutStyles = {
@@ -38,9 +40,12 @@ const layoutStyles = {
 };
 
 const Layout = ({ children }) => {
+  const location = useLocation();
+  const isAdminRoute = location.pathname.startsWith('/admin');
+
   return (
     <div style={layoutStyles.layoutContainer}>
-      <Navbar />
+      {isAdminRoute ? <AdminNavbar /> : <Navbar />}
       <main style={layoutStyles.mainContent}>
         {children}
       </main>

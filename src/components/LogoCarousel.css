@@ -1,0 +1,20 @@
+/* src/components/LogoCarousel.css */
+.carousel-item {
+    width: 100%; /* Lebar item carousel */
+  }
+  
+  .carousel-inner {
+    display: flex;
+  }
+  
+  .carousel-item-next, .carousel-item-prev, .carousel-item-next.carousel-item-prev {
+    display: flex;
+    flex: 1;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 150px; /* Tinggi gambar */
+    object-fit: contain; /* Pastikan gambar tetap proporsional */
+  }
+  
